@@ -54,6 +54,8 @@ public class QuestTester {
 
         //create a boolean to be true;
         boolean playersCanMove = true;
+
+        System.out.println("hello");
         while(playersCanMove){
             //move character
             for(Character c: characters){
