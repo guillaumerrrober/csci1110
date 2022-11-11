@@ -1,0 +1,34 @@
+Bigger is Better
+Problems of the day
+The purpose of these small problems are to help you develop your craft. Each problem will only be open for a fixed time period. The problems are short and will take anywhere from a few minutes up to half an hour.
+For each problem you will be provided with sample inputs and corresponding outputs. All input is done via the console (unless specified otherwise) and all output is to be done to the console as well.
+Your code must run without syntax errors. If it does not, you will receive a 0 on that portion of the problem.
+Instructions
+Today you will be given a Fruit class as well as a FruitBasket class.
+Fruit
+String : name
+String : colour
+double : weight
+String : getName()
+String : getColour()
+double : getWeight()
+void : setName(String)
+void : setColour(String)
+void : setWeight(double)
+String : toString()
+
+FruitBasket
+ArrayList : basket
+void : addFruit(Fruit)
+String : toString()
+You will implement a comparable interface within Fruit objects. Pretend that all fruit costs a toonie, no matter the size. To get more for your money, you will want to buy the bigger fruit.
+Details
+Input
+Input for this problem will be a fruit name, followed by a colour, and then the weight. Input has been handled for you in PoD.java.
+Processing & Output
+Compare the weight of the object with the weight of the Fruit object taken as input.
+The value you return from the compareTo() method will be as follows:
+If the weight of the fruits is equal, you will return 0.
+If the current fruit object is greater, return 1.
+Otherwise (i.e. the other fruit object is greater), you will return -1.
+This will allow us to sort the fruit objects by weight. This sort is handled in the main method of `PoD.java`. All output from that method is handled for you.
